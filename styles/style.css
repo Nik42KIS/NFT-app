@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:wght@300;600&family=Playfair+Display:ital,wght@1,500;1,800;1,900&family=Poppins:wght@500;700&family=Quicksand:wght@300;700&family=Roboto&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
+    font-weight: 500;
+}
+
+.header{
+    min-width: 1197px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 110px 10px;
+}
+
+.header__logo{
+    background-color: #fff;
+    display: block;
+    background-image: url('https://bitpay.com/blog/content/images/2022/01/what-is-an-nft.png');
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 70px;
+    background-size:cover;
+    border-radius: 5px;
+}
+
+.form{
+    position: relative;
+}
+
+.form__button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./../images/search.svg');
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+
+.form__input{
+    background-color: rgb(235, 235, 241, 0.1);
+    border: none;
+    width: 380px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: white;
+}
+.form__input:focus{
+    outline: none;
+}
+
+.header__list{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header__link{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+.active__link{
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(24, 24, 113) 35%, rgba(0,212,255,1) 100%) ;
+    border-radius: 10px;
+}
