@@ -4,10 +4,11 @@ body{
     font-family: "Poppins", sans-serif;
     background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
     font-weight: 500;
+    color: #fff;
 }
 
 .header{
-    min-width: 1197px;
+    max-width: 1197px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -69,6 +70,98 @@ body{
 
 .active__link{
     padding: 10px 20px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(24, 24, 113) 35%, rgba(0,212,255,1) 100%) ;
+    background: linear-gradient(90deg, rgb(253, 2, 156) 0%, rgb(136, 1, 77) 35%, rgb(151, 3, 209) 100%) ;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 1197px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.main__img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.main__image{
+    width: calc(100% - 490px - 116px);
+
+}
+
+.main__text{
+    flex-basis: 490px;
+}
+
+
+.main__title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom:10px;
+}
+
+.main__desc{
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 42px;
+}
+
+.main__btn{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, .1);
+    height: 18px;
+    width: 50px;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+
+}
+
+.main__btn__gradient{
+    background: linear-gradient(90deg, rgb(253, 2, 156) 0%, rgb(136, 1, 77) 35%, rgb(151, 3, 209) 100%);
+    margin-left: 40px;
+}
+
+.main__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-left: 0;
+    color: rgba(255, 255, 255, .4);
+    gap: 110px;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.main__list__item span{
+    display: block;
+    font-size: 30px;
+    color: #fff;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.company img{
+    height: 90px;
+    width: 300px;
     border-radius: 10px;
 }
