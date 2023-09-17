@@ -60,6 +60,7 @@ body{
     display: flex;
     list-style-type: none;
     gap: 40px;
+    padding-left: 0;
 }
 
 .header__link{
@@ -73,6 +74,8 @@ body{
     background: linear-gradient(90deg, rgb(253, 2, 156) 0%, rgb(136, 1, 77) 35%, rgb(151, 3, 209) 100%) ;
     border-radius: 10px;
 }
+
+
 
 .container{
     max-width: 1197px;
@@ -158,10 +161,330 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 .company img{
     height: 90px;
     width: 300px;
     border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+.company img:hover{
+    opacity: 1;
+}
+
+.title{
+    text-align: center;
+     font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom:10px;
+}
+
+.desc{
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 42px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__item{
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 26px;
+    flex-basis: 32.5%;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.card__item:hover{
+    background: rgba(255, 255, 255, .5);;
+}
+
+.card__cover{
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.card__img{
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.card__link{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(253, 2, 156) 0%, rgb(136, 1, 77) 35%, rgb(151, 3, 209) 100%);
+    padding: 14px 20px;
+    margin-top: 26px;
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.card__link:hover {
+    background: transparent;
+    border: 1px solid #ff109f;
+
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price{
+    text-align: right;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .5)
+}
+
+.card__price span{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card__nick{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+}
+
+.banner{
+    background: linear-gradient(90deg, rgb(253, 2, 156) 0%, rgb(136, 1, 77) 35%, rgb(151, 3, 209) 100%);
+    border-radius: 30px;
+    text-align: center;
+    margin: 118px 0 100px 0;
+    padding:51px 15px 64px
+}
+
+.banner h3{
+    max-width: 500px;
+    font-size:50px;
+    font-weight: 700;
+    margin:0 auto 32px;
+}
+
+.banner a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.banner a:hover{
+    color: rgb(245, 85, 112);
+    background-color:rgb(255, 255, 255);
+}
+
+.header__buttons{
+    display: none;
+} 
+
+@media(max-width: 1130px) {
+    .header, .container{
+        max-width: 900px;
+    }
+    .header__list {
+        gap: 20px;
+        font-size: 16px;
+    }
+    .form__input {
+        width: 260px;
+        padding: 13px 13px 13px 40px;
+        font-size: 14px;
+    }
+    .main__text {
+        flex-basis: 450px;
+    }
+    .main__title {
+        font-size: 43px;
+    }
+    .main__desc, .main__btn, .main__list__item, .desc, .card__link {
+        font-size: 18px;
+    }
+    .main__image {
+        flex-basis: calc(100% - 450px - 30px)
+    }
+    .main__list__item span{
+        font-size: 26px;
+    }
+    .main__list{
+        gap: 40px;
+    }
+    .company img{
+        height: 52px;
+        width: 200px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .card__cover, .card__img {
+        height: 300px;
+    }
+    .card__price, .card__nick{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 880px){
+    .header, .container{
+        max-width: 750px;
+    }
+    .header__buttons{
+        display: flex;
+    }
+    .header__nav, .form{
+        display: none;
+    }
+    .header__search, .header__menu{
+        display: block;
+        background: transparent;
+        border: none;
+        height: 30px;
+        background-size: cover;
+    }
+    .header__search{
+        width: 30px;
+        background-image: url('./../images/search.svg');
+        cursor: pointer;
+
+    }
+    .header__menu{
+        cursor: pointer;
+        margin-left: 22px;
+        width: 35px;
+        background-image: url('./../images/menu-burger.svg');
+    }
+    .main{
+        position: relative;
+    }
+    .main__image{
+        flex-basis: inherit;
+        position: absolute;
+        max-width: 33vw;
+        right: 0;
+        bottom: 0;
+    }
+    .company img{
+        height: 5.5vw;
+    }
+    .card__cover, .card__img{
+        height: 30vw;
+    }
+    .card__info {
+        margin-top: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card__price{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .card__item{
+        padding: 15px;
+    }
+    .banner{
+        height: 150px;
+        padding: 30px 15px 48px;
+    }
+
+    .banner h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    .header, .container{
+        max-width: 400px;
+    }
+    .header{
+        padding-bottom: 60px;
+    }
+    .main__text{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .main__title{
+        font-size: 34px;
+    }
+    .main__list{
+        justify-content: center;
+    }
+    .main__image{
+        display: none;
+    }
+    .main__desc, .main__btn, .main__list__item, .desc, .card__link, .banner a {
+        font-size: 16px;
+    }
+    .company{
+        align-items: flex-start;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .company img{
+        height: 3.8vw;
+        margin-bottom: 15px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .desc{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .card{
+        flex-direction: column;
+        max-width: 300px;
+        margin: 30px auto 100px;
+    }
+    .card__item {
+        margin-bottom: 15px;
+    }
+    .banner h3{
+        font-size: 22px;
+    }
+    .card__cover, .card__img{
+        height: 50vw;
+    }
+}
+
+@media(max-width: 500px){
+    .company img{
+        height: 4.8vw;
+    };
+}
+
+@media(max-width: 400px){
+    .company img {
+        height: 5.3vw;
+    }
 }
